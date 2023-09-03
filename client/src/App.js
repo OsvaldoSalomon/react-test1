@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Server from "./components/Header/Server";
 function App() {
   return (
     <div className="App">
@@ -9,6 +9,7 @@ function App() {
         <p>
           Frontend Working
         </p>
+        <Server/>
         <a
           className="App-link"
           href="https://reactjs.org"
