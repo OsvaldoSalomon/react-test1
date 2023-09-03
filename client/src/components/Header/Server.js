@@ -5,14 +5,12 @@ function Server() {
     const [text, setText] = useState("");
 
     function getBackendInfo() {
-        //axios.get("https://react-test-f8va.onrender.com/",
-        axios.get("http://localhost:3001",
+        axios.get("https://react-test-f8va.onrender.com/",
             {crossdomain: true})
             .then(response => {
                 console.log(response);
                 setText(response.data.server);
         });
-        //setText('test');
     }
 
     return (
